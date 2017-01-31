@@ -1,0 +1,4 @@
+Demo For PoC scenarios
+In order to verify the functionalities of Mperks/Meijer websites.
+As a tester
+I want to check the basic functioning/flow of the website.
