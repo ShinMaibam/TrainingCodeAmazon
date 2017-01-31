@@ -18,5 +18,8 @@ public class Utility_Helper extends PageObject{
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
+	public void testnew2(){
+		System.out.println("Demo hotFix");
+	}
 
 }
