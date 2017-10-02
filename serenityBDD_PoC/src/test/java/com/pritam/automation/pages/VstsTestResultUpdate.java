@@ -69,7 +69,7 @@ public class VstsTestResultUpdate {
 
 	public static void updateTestResult(int runid, String status) throws IOException {
 		HttpPatch httpPatch = new HttpPatch(
-				"https://{serverpath}/_apis/test/runs/" + runid + "/results?api-version=2.0-preview");
+				"https://serverpath/_apis/test/runs/" + runid + "/results?api-version=2.0-preview");
 
 		String req = updateResultReq(status);
 		StringEntity input = new StringEntity(req);

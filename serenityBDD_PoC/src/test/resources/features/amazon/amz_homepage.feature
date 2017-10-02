@@ -11,6 +11,17 @@ Feature: To validate Amazon Home screen functionality
       | search_item   |
       | iPhone7s Plus |
 
+  @pri2
+  Scenario Outline: TC01 - validate search key display
+    Given user launch desire website
+    And user provide '<TestCaseID>' '<TestPointID>' '<TestPlanID>' to update run result in vsts
+    When user search for item '<search_item>'
+    Then user should see search key '<search_item>' next to search result numbers
+
+    Examples: 
+      | search_item   | TestCaseID | TestPointID | TestPlanID |
+      | iPhone7s Plus | TC_1001    |         345 |        901 |
+
   @Lei1
   Scenario: TC02 - Amazon User Sign In
     Given user launch desire website
